@@ -13,14 +13,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
-    <title>Projeto: Pokedéx</title>
+    <title>Projeto: Mini-Pokedéx</title>
 </head>
 
 <body>
     <main>
         <div class="pokedex">
             <div class="pokemon-cards">
-                <div class="pokemon-card open electric-type">
+                <div class="pokemon-card open electric-type" id="pikachu-card">
                     <div class="top-cards">
                         <div class="details">
                             <h2 class="pokeName">Pikachu</h2>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pokemon-card grass-type">
+                <div class="pokemon-card grass-type" id="bulbasaur-card">
                     <div class="top-cards">
                         <div class="details">
                             <h2 class="pokeName">Bulbassaur</h2>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pokemon-card dragon-type">
+                <div class="pokemon-card dragon-type" id="dragonite-card">
                     <div class="top-cards">
                         <div class="details">
                             <h2 class="pokeName">Dragonite</h2>
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pokemon-card fire-type">
+                <div class="pokemon-card fire-type" id="charmander-card">
                     <div class="top-cards">
                         <div class="details">
                             <h2 class="pokeName">Charmander</h2>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pokemon-card shadow-type">
+                <div class="pokemon-card shadow-type" id="gengar-card">
                     <div class="top-cards">
                         <div class="details">
                             <h2 class="pokeName">Gengar</h2>
@@ -192,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pokemon-card water-type">
+                <div class="pokemon-card water-type" id="gyarados-card">
                     <div class="top-cards">
                         <div class="details">
                             <h2 class="pokeName">Gyarados</h2>
@@ -230,27 +230,27 @@
 
             <nav class="poke-list">
                 <ul>
-                    <li class="pokemon active">
+                    <li class="pokemon active" id="pikachu">
                         <img src="./src/images/cabeca-pikachu.png" alt="Imagem da cabeça do Pikachu">
                         <span>Pikachu</span>
                     </li>
-                    <li class="pokemon">
+                    <li class="pokemon" id="bulbasaur">
                         <img src="./src/images/cabeca-bulbasaur.png" alt="Imagem da cabeça do Bulbasauro">
                         <span>Bulbasaur</span>
                     </li>
-                    <li class="pokemon">
+                    <li class="pokemon" id="dragonite">
                         <img src="./src/images/cabeca-dragonite.png" alt="Imagem da cabeça do Dragonite">
                         <span>Dragonite</span>
                     </li>
-                    <li class="pokemon">
+                    <li class="pokemon" id="charmander">
                         <img src="./src/images/cabeca-charmander.png" alt="Imagem da cabeça do Charmander">
                         <span>Charmander</span>
                     </li>
-                    <li class="pokemon">
+                    <li class="pokemon" id="gengar">
                         <img src="./src/images/cabeca-gengar.png" alt="Imagem da cabeça do Gengar">
                         <span>Gengar</span>
                     </li>
-                    <li class="pokemon">
+                    <li class="pokemon" id="gyarados">
                         <img src="./src/images/cabeca-gyarados.png" alt="Imagem da cabeça do Gyarados">
                         <span>Gyarados</span>
                     </li>
@@ -258,6 +258,8 @@
             </nav>
         </div>
     </main>
+
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
