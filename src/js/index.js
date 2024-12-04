@@ -19,3 +19,4 @@ pokemonSelectionList.forEach(pokemon => {
         selectedListPokemon.classList.add('active')
     });
 });
+
